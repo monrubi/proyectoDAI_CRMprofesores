@@ -1,0 +1,28 @@
+﻿<Window x:Class="profesores.rubros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:profesores"
+        mc:Ignorable="d"
+        Title="rubros" Height="249.532" Width="300">
+    <Grid>
+        <TextBox x:Name="txtExam" HorizontalAlignment="Left" Height="23" Margin="164,56,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="48" TextChanged="txtExam_TextChanged"/>
+        <Button x:Name="bCancel" Content="Cancelar" HorizontalAlignment="Left" Margin="168,178,0,0" VerticalAlignment="Top" Width="75" Click="bCancel_Click"/>
+        <Button x:Name="bGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="50,178,0,0" VerticalAlignment="Top" Width="75" Click="bGuardar_Click"/>
+        <Label x:Name="label" Content="Examen Trimestral:" HorizontalAlignment="Left" Margin="49,52,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="label1" Content="VALOR" HorizontalAlignment="Left" Margin="164,22,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="%" HorizontalAlignment="Left" Margin="213,53,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Tareas o Actividades:" HorizontalAlignment="Left" Margin="38,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTarea" HorizontalAlignment="Left" Height="23" Margin="164,121,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="48" TextChanged="txtTarea_TextChanged"/>
+        <Label x:Name="label2_Copy" Content="%" HorizontalAlignment="Left" Margin="213,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbGrupo" Content="Grupo: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtProy" HorizontalAlignment="Left" Height="23" Margin="164,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" TextChanged="txtProy_TextChanged" Text="0"/>
+        <Label x:Name="label2_Copy1" Content="%" HorizontalAlignment="Left" Margin="213,118,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Proyectos:" HorizontalAlignment="Left" Margin="93,83,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbTotal" Content="0" HorizontalAlignment="Left" Margin="164,146,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="label2_Copy2" Content="%" HorizontalAlignment="Left" Margin="213,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="Total:" HorizontalAlignment="Left" Margin="121,145,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

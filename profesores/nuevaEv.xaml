@@ -1,0 +1,83 @@
+﻿<Window x:Class="profesores.nuevaEv"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:profesores"
+        mc:Ignorable="d"
+        Title="nuevaEv" Height="396.549" Width="313.277" Loaded="Window_Loaded">
+    <Grid>
+        <Button x:Name="bAtras" Content="Cancelar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="bAtras_Click"/>
+        <Label x:Name="lbGrupo" Content="Grupo: " HorizontalAlignment="Left" Margin="111,40,0,0" VerticalAlignment="Top"/>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="275" Margin="27,75,0,0" VerticalAlignment="Top" Width="251">
+            <TabItem Header="Actividades">
+                <Grid Background="#aed6e8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="84*"/>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="148*"/>
+                    </Grid.ColumnDefinitions>
+                    <WrapPanel HorizontalAlignment="Left" Height="55" Margin="12,21,0,0" VerticalAlignment="Top" Width="54">
+                        <Label x:Name="label" Content="Tipo" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <RadioButton x:Name="rbTarea" Content="Tarea" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <RadioButton x:Name="rbClase" Content="Clase" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    </WrapPanel>
+                    <TextBox x:Name="tbActividad" HorizontalAlignment="Left" Height="23" Margin="17,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="211" Grid.ColumnSpan="3"/>
+                    <Label x:Name="label1" Content="Nombre" HorizontalAlignment="Left" Margin="15,94,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btActividad" Content="Crear" HorizontalAlignment="Left" Margin="1,163,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btActividad_Click" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Proyecto">
+                <Grid Background="#bdaee8">
+                    <Label x:Name="label2" Content="Nombre:" HorizontalAlignment="Left" Margin="16,25,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbProNombre" HorizontalAlignment="Left" Height="23" Margin="19,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="203"/>
+                    <Button x:Name="btProyecto" Content="Crear" HorizontalAlignment="Left" Margin="82,163,0,0" VerticalAlignment="Top" Width="75" Click="btProyecto_Click"/>
+                    <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="51,100,0,0" VerticalAlignment="Top" Height="25"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Examen">
+                <Grid Background="#cbedbb">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="9*"/>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="64*"/>
+                        <ColumnDefinition Width="159*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="label3" Content="Secciones del examen:" HorizontalAlignment="Left" Margin="6,2,0,0" VerticalAlignment="Top" Grid.ColumnSpan="4"/>
+                    <Button x:Name="btExamen" Content="Crear" Grid.Column="2" HorizontalAlignment="Left" Margin="62.61,212,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="btExamen_Click"/>
+                    <Grid HorizontalAlignment="Left" Height="175" Margin="5,27,0,0" VerticalAlignment="Top" Width="232" Grid.ColumnSpan="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="label6" Content="Núm." HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="55,14,0,0"/>
+                        <Label x:Name="label4" Content="1. " HorizontalAlignment="Left" Margin="65,40,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                        <Label x:Name="label5_Copy" Content="2. " HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                        <Label x:Name="label16" Content="3. " HorizontalAlignment="Left" Margin="65,93,0,0" VerticalAlignment="Top" Width="22" Grid.ColumnSpan="2"/>
+                        <Label x:Name="label7" Content="Valor&#xD;&#xA;en Puntos" HorizontalAlignment="Left" Margin="95,0,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="64" Height="39"/>
+                        <Label x:Name="label5" Content="4. " HorizontalAlignment="Left" Margin="65,121,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                        <Label x:Name="label8" Content="5. " HorizontalAlignment="Left" Margin="65,148,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="tbP1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="22" Margin="110,41,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="23"/>
+                        <TextBox x:Name="tbP2" HorizontalAlignment="Left" Height="22" Margin="110,68,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="23" Grid.ColumnSpan="2" IsEnabled="False"/>
+                        <TextBox x:Name="tbG2" HorizontalAlignment="Left" Height="22" Margin="178,68,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="31" Grid.Column="1" IsEnabled="False"/>
+                        <TextBox x:Name="tbP3" HorizontalAlignment="Left" Height="22" Margin="110,95,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="23" Grid.ColumnSpan="2" IsEnabled="False"/>
+                        <TextBox x:Name="tbP4" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="111,123,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="22" IsEnabled="False"/>
+                        <TextBox x:Name="tbP5" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="111,150,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="22" IsEnabled="False"/>
+                        <Label x:Name="label9" Content="Número de&#xD;&#xA;Preguntas" Grid.Column="1" HorizontalAlignment="Left" Margin="160,0,-7,0" VerticalAlignment="Top" Height="47" />
+                        <TextBox x:Name="tbG1" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="178,41,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="31"/>
+
+                        <TextBox x:Name="tbG3" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="178,95,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="31" IsEnabled="False"/>
+                        <TextBox x:Name="tbG4" Grid.Column="1" HorizontalAlignment="Left" Height="22" Margin="178,123,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="31" IsEnabled="False"/>
+                        <TextBox x:Name="tbG5" Grid.Column="1" HorizontalAlignment="Left" Height="21" Margin="178,150,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="31" IsEnabled="False"/>
+                        <CheckBox x:Name="cb1" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="19,46,0,0" VerticalAlignment="Top" Width="21" IsChecked="True" IsEnabled="False"/>
+                        <Label x:Name="label10" Grid.ColumnSpan="2" Content="Habilitar" HorizontalAlignment="Left" Margin="-2,13,0,0" VerticalAlignment="Top"/>
+                        <CheckBox x:Name="cb2" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="19,71,0,0" VerticalAlignment="Top" Checked="cb2_Checked" Unchecked="cb2_Checked"/>
+                        <CheckBox x:Name="cb3" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="19,98,0,0" VerticalAlignment="Top" Checked="cb3_Checked" Unchecked="cb3_Checked"/>
+                        <CheckBox x:Name="cb4" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="19,127,0,0" VerticalAlignment="Top" Checked="cb4_Checked" Unchecked="cb4_Checked"/>
+                        <CheckBox x:Name="cb5" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="19,152,0,0" VerticalAlignment="Top" Checked="cb5_Checked" Unchecked="cb2_Checked"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

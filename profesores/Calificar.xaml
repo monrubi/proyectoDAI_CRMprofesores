@@ -1,0 +1,16 @@
+﻿<Window x:Class="profesores.Calificar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:profesores"
+        mc:Ignorable="d"
+        Title="Calificar" Height="180.177" Width="300">
+    <Grid>
+        <Label x:Name="lbGrupo" Content="Grupo: " HorizontalAlignment="Left" Margin="85,18,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbAlumno" Content="Alumno: " HorizontalAlignment="Left" Margin="29,49,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbCalif" HorizontalAlignment="Left" Height="23" Margin="50,97,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47"/>
+        <Button x:Name="bCalif" Content="Guardar Calificación" HorizontalAlignment="Left" Margin="112,99,0,0" VerticalAlignment="Top" Width="136" Click="bCalif_Click"/>
+
+    </Grid>
+</Window>

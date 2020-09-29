@@ -1,0 +1,37 @@
+﻿<Window x:Class="profesores.CalificarExamen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:profesores"
+        mc:Ignorable="d"
+        Title="CalificarExamen" Height="316.476" Width="300">
+    <Grid>
+        <Label x:Name="lbAlumno" Content="Alumno: " HorizontalAlignment="Left" Margin="21,21,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bCalif" Content="Calificar" HorizontalAlignment="Left" Margin="113,64,0,0" VerticalAlignment="Top" Width="75" Click="bCalif_Click"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="23" Margin="229,130,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="23" Margin="229,161,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" IsEnabled="False"/>
+        <Label x:Name="lbS1" Content="Sección 1: " HorizontalAlignment="Left" Margin="8,129,0,0" VerticalAlignment="Top" Width="63"/>
+        <Label x:Name="label1" Content="Aciertos" HorizontalAlignment="Left" Margin="223,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbS2" Content="Sección 2: " HorizontalAlignment="Left" Margin="9,161,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="23" Margin="229,192,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" IsEnabled="False"/>
+        <Label x:Name="lbS3" Content="Sección 3: " HorizontalAlignment="Left" Margin="9,190,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="lbS4" Content="Sección 4: " HorizontalAlignment="Left" Margin="8,221,0,0" VerticalAlignment="Top" Width="63"/>
+        <TextBox x:Name="tb4" HorizontalAlignment="Left" Height="23" Margin="230,221,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" IsEnabled="False"/>
+        <Label x:Name="label" Content="Sección 5:" HorizontalAlignment="Left" Margin="10,247,0,0" VerticalAlignment="Top" Width="62"/>
+        <TextBox x:Name="tb5" HorizontalAlignment="Left" Height="23" Margin="230,250,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" IsEnabled="False"/>
+        <Label x:Name="label2" Content="Valor" HorizontalAlignment="Left" Margin="83,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Número de&#xD;&#xA;Preguntas" HorizontalAlignment="Left" Margin="144,89,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbV1" Content="" HorizontalAlignment="Left" Margin="82,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbV2" Content="" HorizontalAlignment="Left" Margin="82,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbV3" Content="" HorizontalAlignment="Left" Margin="82,192,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbV4" Content="" HorizontalAlignment="Left" Margin="82,222,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbV5" Content="" HorizontalAlignment="Left" Margin="82,250,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP1" Content="" HorizontalAlignment="Left" Margin="168,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP2" Content="" HorizontalAlignment="Left" Margin="168,161,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP3" Content="" HorizontalAlignment="Left" Margin="168,192,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP4" Content="" HorizontalAlignment="Left" Margin="168,222,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbP5" Content="" HorizontalAlignment="Left" Margin="168,250,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
